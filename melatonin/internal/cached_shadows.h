@@ -148,7 +148,7 @@ namespace melatonin::internal
         struct TextArrangement
         {
             juce::String text = {};
-            juce::Font font = {};
+            juce::Font font = juce::FontOptions();
             juce::Rectangle<float> area = {};
             juce::Justification justification = juce::Justification::left;
 
@@ -163,7 +163,7 @@ namespace melatonin::internal
             }
         };
 
-        TextArrangement lastTextArrangement = {};
+        TextArrangement lastTextArrangement;
 
         void setScale (juce::Graphics& g, bool lowQuality)
         {

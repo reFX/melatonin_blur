@@ -16,6 +16,11 @@ END_JUCE_MODULE_DECLARATION
 */
 
 #include "juce_graphics/juce_graphics.h"
+
+JUCE_BEGIN_IGNORE_WARNINGS_GCC_LIKE ("-Wunguarded-availability-new", "-Wsign-compare")
+
 #include "melatonin/cached_blur.h"
 #include "melatonin/shadows.h"
 #include "melatonin/blur_demo_component.h"
+
+JUCE_END_IGNORE_WARNINGS_GCC_LIKE
